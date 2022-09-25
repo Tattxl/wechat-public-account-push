@@ -63,17 +63,17 @@ const USER_CONFIG = {
   USERS: [
     {
       // 想要发送的人的名字
-      name: '老婆0',
+      name: '臭老爷们',
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      id: 'oMxea6EqKf81nxwnjQq3y5xEiR7Y',
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: '',
+      useTemplateId: 'W_fP1BFb9SzXWQcdOxBux3MPj4xOsMMwP-OCqQCaYf0',
       // 所在省份
-      province: '广东',
+      province: '北京',
       // 所在城市
-      city: '肇庆',
+      city: '北京',
       // 新历生日, 仅用作获取星座运势, 格式必须
-      horoscopeDate: '12-27',
+      horoscopeDate: '06-27',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
@@ -82,10 +82,10 @@ const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '老婆', year: '1996', date: '09-09',
+          type: '*生日', name: '臭老爷们', year: '2000', date: '06-27',
         },
         {
-          type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
+          type: '节日', name: '在一起纪念日', year: '2021', date: '08-22',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
@@ -98,7 +98,7 @@ const USER_CONFIG = {
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
         // 在一起的日子
-        { keyword: 'love_day', date: '2022-09-08' },
+        { keyword: 'love_day', date: '2021-08-22' },
         // 结婚纪念日
         { keyword: 'marry_day', date: '2022-09-09' },
         // 退伍日
@@ -116,88 +116,10 @@ const USER_CONFIG = {
           // 该日期是否为单周
           isOdd: true
         },
-        // 课表
-        courses: {
-          // 单周课表
-          // 从星期一到星期日（星期六和星期日的课表数组可不填写）
-          odd: [
-            // 例子，周一的课表
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周二
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周三
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周四
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周五
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周六
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ],
-            // 周日
-            [
-              '08:00-09:35 高等数学',
-              '09:50-11:25 高等物理'
-            ]
-          ],
-          // 双周课表
-          even: [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            []
-          ]
-        }
       },
     },
     {
-      name: '老婆1',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    },
-    {
-      name: '老婆2',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    },
-    {
-      name: '老婆3',
+      name: '臭宝',
       id: '',
       useTemplateId: '',
       province: '',
@@ -218,7 +140,7 @@ const USER_CONFIG = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '',
+  CALLBACK_TEMPLATE_ID: 'W_fP1BFb9SzXWQcdOxBux3MPj4xOsMMwP-OCqQCaYf0',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -226,7 +148,7 @@ const USER_CONFIG = {
       // 一般都填自己
       name: '自己',
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      id: 'oMxea6DO_6qndXJuYSFMqqqj_IvY',
     }
     // 你可以不断按格式往下增加
     // ...
@@ -239,9 +161,9 @@ const USER_CONFIG = {
   /** 天气相关 */
 
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: '广东',
+  PROVINCE: '北京',
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: '惠州',
+  CITY: '北京',
 
   /** 重要节日相关 */
 
@@ -265,18 +187,18 @@ const USER_CONFIG = {
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
     {
-      type: '*生日', name: '老婆', year: '1996', date: '09-09', isShowAge: true,
+      type: '*生日', name: '臭宝', year: '2000', date: '06-27', isShowAge: true,
     },
     {
-      type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
+      type: '节日', name: '纪念日', year: '2021', date: '08-22',
     },
     // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-    {
-      type: '生日', name: '李四', year: '1996', date: '09-31', isShowAge: true,
-    },
-    {
-      type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
-    }
+//     {
+//       type: '生日', name: '李四', year: '1996', date: '09-31', isShowAge: true,
+//     },
+//     {
+//       type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
+//     }
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -286,7 +208,7 @@ const USER_CONFIG = {
    * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
    * 如果为0, 则默认展示全部
    */
-  FESTIVALS_LIMIT: 4,
+  FESTIVALS_LIMIT: 2,
 
   /** 日期相关 */
 
@@ -296,11 +218,11 @@ const USER_CONFIG = {
    * */
   CUSTOMIZED_DATE_LIST: [
     // 在一起的日子
-    { keyword: 'love_day', date: '2022-09-08' },
-    // 结婚纪念日
-    { keyword: 'marry_day', date: '2022-09-09' },
-    // 退伍日
-    { keyword: 'ex_day', date: '2022-09-10' }
+    { keyword: 'love_day', date: '2021-08-22' },
+//     // 结婚纪念日
+//     { keyword: 'marry_day', date: '2022-09-09' },
+//     // 退伍日
+//     { keyword: 'ex_day', date: '2022-09-10' }
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -313,15 +235,12 @@ const USER_CONFIG = {
    * */
   SLOT_LIST: [
     // 这样配置的话，就会每次发送这句话
-    { keyword: 'encourage_oneself', contents: '你主要的问题在于读书太少而想得太多' },
+//     { keyword: 'encourage_oneself', contents: '你主要的问题在于读书太少而想得太多' },
     // 这样配置的话，就会每次随机选一句话发送
     {
       keyword: 'lover_prattle',
       contents: [
-        '因为太喜欢你，所以看谁都像是情敌。',
-        '申请成为你爱里的永久居民。',
-        '你很傻，你很笨，可我还是很羡慕你，因为你有我',
-        '遇见你，就好像捡到了100斤的运气'
+        '你很傻，你很笨，你还撩骚，可我还是很羡慕你，因为你有我',
       ],
     }
     // 你可以不断按格式往下增加
